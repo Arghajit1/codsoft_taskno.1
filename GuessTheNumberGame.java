@@ -9,14 +9,15 @@ public class GuessTheNumberGame {
 
         int totalScore = 0;
         boolean playAgain = true;
-        int attempts = 0;
-        int maxAttempts = 4; 
-        int numberToGuess = random.nextInt(100) + 1;      
-        boolean guessedCorrectly = false;
+        int maxAttempts = 6; 
 
         System.out.println(" Welcome to Guess the Number Game!!!!!!");
 
         while (playAgain) {          
+            int attempts = 0;
+            int numberToGuess = random.nextInt(100) + 1;      
+            boolean guessedCorrectly = false;
+
 
             System.out.println("\nI have picked a number between 1 and 100.");
             System.out.println("You have " + maxAttempts + " attempts. Good luck!");
